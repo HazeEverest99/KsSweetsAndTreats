@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Order – Sweet Crumbs Bakery</title>
+    <title>Menu – Sweet Crumbs Bakery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
-    <h1>Place an Order</h1>
+    <h1>Our Menu</h1>
     <nav>
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
@@ -16,29 +16,20 @@
     </nav>
 </header>
 
-<section class="order-section">
-    <h2>Online Ordering</h2>
-    <p>Select an item below to purchase.</p>
+<section class="menu-section">
+    <h2>Cakes</h2>
+    <div class="item">Chocolate Fudge — $30</div>
+    <div class="item">Red Velvet — $28</div>
+    <div class="item">Vanilla Celebration — $25</div>
 
-    <!-- PRODUCT EXAMPLES -->
-    <div class="product">
-        <h3>Chocolate Fudge Cake — $30</h3>
-        <button onclick="location.href='YOUR_STRIPE_LINK_HERE'">
-            Buy with Stripe
-        </button>
-        <div id="paypal-button-cake"></div>
-    </div>
+    <h2>Cupcakes</h2>
+    <div class="item">6-Pack Assorted — $12</div>
+    <div class="item">Vanilla Sprinkle — $2 each</div>
 
-    <div class="product">
-        <h3>6-Pack Cupcakes — $12</h3>
-        <button onclick="location.href='YOUR_STRIPE_LINK_HERE'">
-            Buy with Stripe
-        </button>
-        <div id="paypal-button-cupcakes"></div>
-    </div>
-
+    <h2>Breads</h2>
+    <div class="item">Sourdough — $7</div>
+    <div class="item">Banana Bread — $5</div>
 </section>
 
-<script src="scripts.js"></script>
 </body>
 </html>
