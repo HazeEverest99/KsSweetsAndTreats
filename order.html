@@ -2,23 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sweet Crumbs Bakery</title>
+    <title>Order – Sweet Crumbs Bakery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Sweet Crumbs Bakery</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="order.html">Order</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+<header>
+    <h1>Place an Order</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-    <section class="hero">
-        <h2>Freshly Baked. Always Delicious.</h2>
-        <p>Homemade cakes, breads, and pastries — baked with love daily.</p>
-    </section>
+<section class="order-section">
+    <h2>Online Ordering</h2>
+    <p>Select an item below to purchase.</p>
+
+    <!-- PRODUCT EXAMPLES -->
+    <div class="product">
+        <h3>Chocolate Fudge Cake — $30</h3>
+        <button onclick="location.href='YOUR_STRIPE_LINK_HERE'">
+            Buy with Stripe
+        </button>
+        <div id="paypal-button-cake"></div>
+    </div>
+
+    <div class="product">
+        <h3>6-Pack Cupcakes — $12</h3>
+        <button onclick="location.href='YOUR_STRIPE_LINK_HERE'">
+            Buy with Stripe
+        </button>
+        <div id="paypal-button-cupcakes"></div>
+    </div>
+
+</section>
+
+<script src="scripts.js"></script>
 </body>
 </html>
