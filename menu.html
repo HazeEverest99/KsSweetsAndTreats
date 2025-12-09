@@ -20,7 +20,8 @@
     <h2>Cakes</h2>
 <div class="item">
     <div>Chocolate Fudge — $30</div>
-    <button onclick="addToCart('Chocolate Fudge', 30)">Add to Cart</button>
+    <input type="number" id="qty-chocolate-fudge" value="1" min="1" style="width:50px;">
+    <button onclick="addToCartWithQty('Chocolate Fudge', 30, 'qty-chocolate-fudge')">Add to Cart</button>
 </div>
 
 <div class="item">

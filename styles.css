@@ -43,3 +43,13 @@ button {
     border-radius: 6px;
     cursor: pointer;
 }
+
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.cart-item button {
+    margin: 0 5px;
+}
+

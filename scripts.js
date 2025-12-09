@@ -18,7 +18,7 @@ function addToCart(name, price) {
 
     // Save to localStorage
     localStorage.setItem("cart", JSON.stringify(cart));
-    alert("Added to cart!");
+    showMessage(`Added ${qty} x ${name} to cart!`);
 }
 
 // Load cart (for order.html)
@@ -75,3 +75,23 @@ function clearCart() {
     localStorage.removeItem("cart");
     loadCart();
 }
+
+function addToCartWithQty(name, price, inputId) {
+    let qty = parseInt(document.getElementById(inputId).value);
+    if (isNaN(qty) || qty <= 0) qty = 1;
+
+    let item = cart.find(i => i.name === name);
+    if (item) item.quantity += qty;
+    else cart.push({name, price, quantity: qty});
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(`Added ${qty} x ${name} to cart!`);
+}
+
+function showMessage(msg) {
+    const messageDiv = document.getElementById("cart-message");
+    messageDiv.innerText = msg;
+    setTimeout(() => { messageDiv.innerText = ""; }, 2000);
+}
+
+
