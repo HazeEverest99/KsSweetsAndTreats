@@ -85,7 +85,7 @@ function addToCartWithQty(name, price, inputId) {
     else cart.push({name, price, quantity: qty});
 
     localStorage.setItem("cart", JSON.stringify(cart));
-    alert(`Added ${qty} x ${name} to cart!`);
+    showMessage(`Added ${qty} x ${name} to cart!`);
 }
 
 function showMessage(msg) {
@@ -93,5 +93,6 @@ function showMessage(msg) {
     messageDiv.innerText = msg;
     setTimeout(() => { messageDiv.innerText = ""; }, 2000);
 }
+
 
 
